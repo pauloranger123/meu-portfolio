@@ -33,6 +33,7 @@ footer {
     position: fixed;
     right: 10px;
     bottom: 10px;
+    box-shadow: 0 0 4px rgb(0 0 0 / 20%);
 
 }
 
