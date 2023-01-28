@@ -1,0 +1,24 @@
+.sobremim {
+    background: #EAF2FD;
+    margin: 1rem auto;
+    padding: 64px;
+    border-radius: 50px;
+    
+}
+
+@media screen and (max-width: 425px) {
+    .sobremim {
+        background: #EAF2FD;
+        border-radius: 0%;
+        padding: 0 16px;       
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .sobremim {
+
+        border-radius: 0%;
+      
+    }
+}

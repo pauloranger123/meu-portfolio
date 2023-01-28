@@ -1,0 +1,11 @@
+.apresentacao__menu {
+    display: flex;
+}
+
+@media screen and (max-width: 425px) {
+    .apresentacao__menu {        
+        margin: auto;
+        width: 100%;
+        margin: 10px 0;
+    }
+}

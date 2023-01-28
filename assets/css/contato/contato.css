@@ -1,0 +1,14 @@
+.contato__formulario form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.contato__nomeInput {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    gap: 8px;
+}

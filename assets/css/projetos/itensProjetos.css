@@ -1,0 +1,55 @@
+.itensBox__acordeao {
+    display: flex;
+    flex-direction: column;
+}
+
+.itensBox__acordeao img {
+    width: 95%;
+    margin: 10px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.itensBox__infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+}
+
+.itenBox__titulo {
+    font-weight: 800;
+    font-size: 16px;
+    color: #333;
+}
+
+.itenBox__titulo {
+    font-weight: 800;
+    color: #333;
+    line-height: 19px;
+}
+
+.itenBox__descricao {
+    font-size: 14px;
+    font-weight: 500;    
+    line-height: 16px;
+}
+
+.itenBox__button {
+    background: #2A7AE4;
+    padding: 12px 16px;
+    border: none;
+
+    /* ESTILO DO TEXTO DO BOTÃO */
+   
+}
+
+.itenBox__button a {
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}

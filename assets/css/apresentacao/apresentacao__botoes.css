@@ -1,0 +1,19 @@
+.apresentacao__botoes {
+    font-family: 'Raleway';
+    margin-right: 2.5rem;
+  
+}
+
+.apresentacao__botoes img {
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 425px) {
+    .apresentacao__botoes {
+        margin: auto;
+    }
+
+    .apresentacao__botoes img {
+        margin-left: 1px;          
+    }
+}

@@ -1,0 +1,19 @@
+.sobremim__texto {    
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    /* Preto/100% */
+
+    color: #464646;
+}
+
+@media screen and (max-width: 425px) {
+    .sobremim__texto {
+        padding-bottom: 32px;
+    }
+}
+
