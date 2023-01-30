@@ -1,14 +1,191 @@
-.contato__formulario form {
+.contato {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 32px;
+    align-items: center;
+    padding: 32px;
+    gap: 10px;
+    background: #EAF2FD;
 }
 
-.contato__nomeInput {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px;
-    gap: 8px;
+.contato__titulo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #464646;
+    margin-bottom: 10px;
 }
+
+.contato__texto {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+}
+
+.contato__formulario {
+    margin-top: 25px;
+}
+
+.contato__inputs {    
+
+    gap: 8px;
+    width: 90%;
+    margin-bottom: 20px;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: none;   
+    border-bottom: 1px solid #d6d6d6; 
+  
+   
+}
+
+.contato__inputs:focus {
+    border: none;    
+    border-bottom: 2px solid #2A7AE4;
+}
+
+
+.contato__inputs--mensagem {   
+    padding: 0px;
+    gap: 8px;
+    width: 90%;    
+    height: 133px;
+    background: #FFFFFF;
+    border-radius: 4px;     
+    border-bottom: 1px solid #d6d6d6;
+    resize: none;  
+    padding-top: 20px;
+
+}
+
+.contato__inputs, .contato__inputs--mensagem {
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #464646;
+    caret-color: #2A7AE4;
+    border: none;
+    outline: none; 
+    padding-left: 20px;
+    
+}
+
+.contato__inputs--mensagem:focus {
+    border: none;    
+    border-bottom: 2px solid #2A7AE4;  
+}
+
+.contato__inputs--mensagem::placeholder {
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #A2A2A2;
+}
+
+
+.form_group {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.titulos__input {
+    position: absolute;
+    left: 9px;
+    top: 7px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #A2A2A2;
+}
+
+.contato__inputs::placeholder {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #A2A2A2;
+}
+
+.button__contato {
+    padding: 12px 16px;
+    gap: 10px;
+    width: 151px;
+    height: 40px;
+    border: none;
+    background: #2A7AE4;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.button__contato:hover {
+    background-color: #223042;
+    border: 1px solid #2A7AE4;
+    font-size: 13px;
+}
+
+.input-single {
+    position: relative;
+}
+
+.input-single label {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    transition: 0.5s ease-in-out;
+    font-family: 'Raleway';
+    font-style: normal;
+}
+
+.contato__img {
+    display: none;
+}
+
+.input-single .contato__inputs:focus ~ label,
+.input-single .contato__inputs:valid ~ label {
+    transform: translateY(-12px);
+    font-size: 12px;
+    color: #2A7AE4;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .contato {
+        flex-direction: row;
+    }
+
+    .contato__titulo {
+        text-align: start;
+    }
+
+    .contato__img {
+        display: block;
+    }
+    
+}
+

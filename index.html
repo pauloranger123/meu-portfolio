@@ -34,7 +34,7 @@
         <header class="cabecalho">
             <div class="cabecalho__container">
                 <img src="./assets/imagens/dev.png" alt="Logo-Dev" class="cabecalho__imagem">            
-                    <h1 >                
+                    <h1 id="TOPO">                
                         <a href="#" class="cabecalho__texto">Portfólio</a>
                     </h1>
             </div>
@@ -95,7 +95,7 @@
                 </div>
             </div>
             </section>
-            <a href="" class="botaoVoltaTopo">&#8593;</a>
+            <a href="#TOPO" class="botaoVoltaTopo">&#8593;</a>
             <section class="skills" id="hobbies">
                 <h3 class="skills__titulo">Hobbies</h3>
                 <div class="skills__content">
@@ -186,6 +186,43 @@
 
                     
 
+            </section>       
+        
+            <section class="contato" id="contato">               
+                    <img src="./assets/imagens/telefone.jpg" alt="" class="contato__img">              
+                    <div class="contato__content">
+                        <h3 class="contato__titulo">Contato</h3>  
+                        <p class="contato__texto">Quer entrar em contato comigo?
+                           Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
+                                <div class="contato__formulario">
+                                    <form action="https://formsubmit.co/6672b56a2ae74fb6c9f9524e5076849a" method="POST">
+                                        
+                                            <div class="input-single">
+                                                <input type="text" class="contato__inputs" name="nome" required>
+                                                <label for="nome">Nome</label> 
+                                            </div>                                       
+                                                  
+                                            <div class="input-single">
+                                                <input type="email" required class="contato__inputs" name="email">
+                                                <label for="email">E-mail</label>  
+                                            </div class="input-single">
+                                            
+                                            <div class="input-single">
+                                                <input type="text" class="contato__inputs" placeholder="Assunto" name="assunto" required> 
+                                                <label for="assunto"></label>  
+                                            </div> 
+                                            
+                                        <div class="form_group" >                                            
+                                            <textarea name="" name="mensagem" cols="30" rows="10" class="contato__inputs--mensagem" placeholder="Mensagem"></textarea>                                            
+                                        </div>
+                                        <button class="button__contato" type="submit">Enviar mensagem</button>
+                                    </form>
+                                </div>
+                    </div>
+
+
+                    
+
             </section>
            
         </main>
@@ -195,5 +232,6 @@
         </section>
         
         <script src="./assets/scripts/script.js"></script>
+        <script src="./assets/scripts/valida.js"></script>
     </body>
 </html>
