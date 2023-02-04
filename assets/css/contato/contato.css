@@ -34,8 +34,7 @@
 .contato__inputs {    
 
     gap: 8px;
-    width: 90%;
-    margin-bottom: 20px;
+    width: 90%; 
     height: 56px;
     background: #FFFFFF;
     border-radius: 4px;
@@ -151,6 +150,7 @@
 
 .input-single {
     position: relative;
+    margin-bottom: 20px;
 }
 
 .input-single label {

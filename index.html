@@ -24,6 +24,8 @@
         <link rel="stylesheet" href="assets/css/projetos/projetos.css">
         <link rel="stylesheet" href="assets/css/projetos/itensProjetos.css">
         <link rel="stylesheet" href="assets/css/contato/contato.css">
+        <link rel="stylesheet" href="assets/css/contato/contatoValidacao.css">
+        
 
         
         <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
@@ -171,7 +173,7 @@
                                         <p class="itenBox__descricao">Decodifique mensagens secretas</p>
                                         <button class="itenBox__button"><a href="https://pauloranger123.github.io/meu_primeiro_criptografador/codificador.html" target="_blank">Ver demo</a></button>
                                     </div>
-                            </div>
+                            </div>                            
                             <div class="itensBox__acordeao">
                                 <img src="./assets/imagens/mudarBorda.PNG" alt="DecodificadorIMG">
                                     <div class="itensBox__infos">
@@ -195,25 +197,32 @@
                         <p class="contato__texto">Quer entrar em contato comigo?
                            Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
                                 <div class="contato__formulario">
-                                    <form action="https://formsubmit.co/6672b56a2ae74fb6c9f9524e5076849a" method="POST">
+                                    <form action="https://formsubmit.co/6672b56a2ae74fb6c9f9524e5076849a" method="POST" data-form>
+                                                                    
                                         
                                             <div class="input-single">
-                                                <input type="text" class="contato__inputs" name="nome" required>
+                                                
+                                                <input type="text" class="contato__inputs required" name="nome" required data-input oninput="validaNome()">
                                                 <label for="nome">Nome</label> 
+                                                <span class="span_required">O nome deve ter no mínimo 3 caracteres</span>
+                                                
                                             </div>                                       
                                                   
                                             <div class="input-single">
-                                                <input type="email" required class="contato__inputs" name="email">
-                                                <label for="email">E-mail</label>  
+                                                <input type="email" required class="contato__inputs required" name="email" data-input oninput="validaEmail()">
+                                                <label for="email">E-mail</label>
+                                                <span class="span_required">Digite um e-mail válido</span>  
                                             </div class="input-single">
                                             
                                             <div class="input-single">
-                                                <input type="text" class="contato__inputs" placeholder="Assunto" name="assunto" required> 
+                                                <input type="text" class="contato__inputs required" placeholder="Assunto" name="assunto" required data-input oninput="validaAssunto()"> 
                                                 <label for="assunto"></label>  
+                                                <span class="span_required">Digite um assunto válido</span>
                                             </div> 
                                             
                                         <div class="form_group" >                                            
-                                            <textarea name="" name="mensagem" cols="30" rows="10" class="contato__inputs--mensagem" placeholder="Mensagem"></textarea>                                            
+                                            <textarea name="" name="mensagem" cols="30" rows="10" class="contato__inputs--mensagem required" placeholder="Mensagem" data-input oninput="validaMensagem()"></textarea>
+                                            <span class="span_required">Digite uma mensagem maior, obrigado.</span>                                           
                                         </div>
                                         <button class="button__contato" type="submit">Enviar mensagem</button>
                                     </form>
