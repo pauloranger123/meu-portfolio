@@ -4,6 +4,16 @@
     const spans = document.querySelectorAll('.span_required');
     const emailRegx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
+    formulario.addEventListener('submit', (event) => {
+        event.preventDefault();
+        validaNome();
+        validaEmail();
+        validaAssunto();
+        validaMensagem();
+       
+        
+    });
+
     function exibeError(index) {
         campos[index].style.border = '0.5px solid #e63636';
         spans[index].style.display = 'block';
